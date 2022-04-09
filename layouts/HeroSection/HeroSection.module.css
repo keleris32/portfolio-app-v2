@@ -4,7 +4,6 @@
     text-align: center;
     padding-top: 5em;
     color: var(--color-white);
-    /* background-color: red; */
 }
 
 .title {
@@ -19,6 +18,7 @@
     gap: 1em;
     margin-top: 2em;
 }
+
 .socials {
     display: flex;
     flex-direction: column;
@@ -75,4 +75,123 @@
 
 .scrollDown:hover {
     color: var(--color-white);
+}
+
+/* ====== 1124px ====== */
+@media screen and (max-width: 1124px) {
+    .container {
+        padding-top: 4em;
+    }
+
+    .title {
+        font-size: 4em;
+    }
+}
+
+/* ====== 768px ====== */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.5em;
+    }
+
+    .scrollDown {
+        display: none;
+    }
+
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.25em;
+        position: static;
+        margin-top: 1.25em;
+    }
+
+    .socials::before {
+        content: '';
+        height: 1px;
+        width: 2em;
+        background-color: var(--color-primary);
+        margin: auto 0;
+    }
+
+    .socials::after {
+        content: '';
+        height: 1px;
+        width: 2em;
+        background-color: var(--color-primary);
+        margin: auto 0;
+    }
+
+    .imageContainer {
+        height: 22.5em;
+        width: 22em;
+    }
+    
+    .imageContainer > span {
+        height: 400px !important;
+        width: auto !important;
+    }
+}
+
+
+/* ====== 600px ====== */
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .description {
+        font-size: .9em;
+    }
+}
+
+/* ====== 500px ====== */
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: .8em;
+    }
+
+    .imageContainer {
+        height: 20em;
+        width: 18em;
+    }
+    
+    .imageContainer > span {
+        height: 400px !important;
+        width: auto !important;
+    }
+}
+
+
+/* ====== 360px ====== */
+@media screen and (max-width: 360px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: .75em;
+    }
+
+    .buttonWrapper {
+        gap: .8em;
+    }
+
+    .socials {
+        gap: 1em;
+    }
+
+    .imageContainer {
+        height: 16em;
+        width: 14em;
+    }
+    
+    .imageContainer > span {
+        height: 300px !important;
+        width: auto !important;
+    }
 }

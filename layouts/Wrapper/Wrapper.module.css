@@ -3,3 +3,10 @@
     max-width: 1124px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1124px) {
+    .container {
+        max-width: 100%;
+        width: 90%;
+    }
+}
