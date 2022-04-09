@@ -49,10 +49,10 @@ a {
   font-family: var(--body-font);
 }
 
-body {
+/* body {
   background-color: var(--color-bg);
   background-image: url('/images/bg-texture.png');
-}
+} */
 
 
 /* html {

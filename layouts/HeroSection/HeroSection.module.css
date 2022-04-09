@@ -1,4 +1,9 @@
 .container {
+    background-color: var(--color-bg);
+    background-image: url('/images/bg-texture.png');
+}
+
+.wrapper {
     position: relative;
     height: 100vh;
     text-align: center;

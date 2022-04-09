@@ -28,59 +28,61 @@ const HeroSection = () => {
   };
 
   return (
-    <Wrapper>
-      <section className={styles.container}>
-        <div>
-          {/* <span>Hello I&apos;m</span> */}
-          <h1 className={styles.title}>Bringing Ideas To Life</h1>
-          <span className={styles.description}>
-            Hello, I&apos;m Charles, and I&apos;m a Fullstack Javacsript
-            Developer
-          </span>
-        </div>
-        <div className={styles.buttonWrapper}>
-          <CustomButton
-            title="Download CV"
-            state="inactive"
-            onClick={handleDownloadBtn}
-          />
-          <CustomButton
-            title="Let's Talk"
-            state="active"
-            onClick={handleContactBtn}
-          />
-        </div>
-        <div className={styles.socials}>
-          <a
-            href="https://www.linkedin.com/in/charles-ejiegbu-2b6644204/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/keleris32"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <BsGithub />
-          </a>
-        </div>
+    <section className={styles.container}>
+      <Wrapper>
+        <div className={styles.wrapper}>
+          <div>
+            {/* <span>Hello I&apos;m</span> */}
+            <h1 className={styles.title}>Bringing Ideas To Life</h1>
+            <span className={styles.description}>
+              Hello, I&apos;m Charles — a Fullstack Javacsript Developer
+            </span>
+          </div>
+          <div className={styles.buttonWrapper}>
+            <CustomButton
+              title="Download CV"
+              state="inactive"
+              onClick={handleDownloadBtn}
+            />
+            <CustomButton
+              title="Let's Talk"
+              state="active"
+              onClick={handleContactBtn}
+            />
+          </div>
+          <div className={styles.socials}>
+            <a
+              href="https://www.linkedin.com/in/charles-ejiegbu-2b6644204/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/keleris32"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <BsGithub />
+            </a>
+          </div>
 
-        <div className={styles.imageContainer}>
-          <Image
-            src="/images/heroSectionImg.png"
-            alt="Myself"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/heroSectionImg.png"
+              alt="Myself"
+              layout="fill"
+              objectFit="contain"
+              priority={true}
+            />
+          </div>
 
-        <a href="#contact" className={styles.scrollDown}>
-          Scroll Down
-        </a>
-      </section>
-    </Wrapper>
+          <a href="#contact" className={styles.scrollDown}>
+            Scroll Down
+          </a>
+        </div>
+      </Wrapper>
+    </section>
   );
 };
 
