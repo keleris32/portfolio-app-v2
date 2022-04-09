@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5em;
+    color: var(--color-white);
+    /* background-color: red; */
+}
+
+.title {
+    font-family: var(--header-font);
+    font-size: 5em;
+    margin-bottom: .125em;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    position: absolute;
+    left: 0;
+    bottom: 3em;
+    color: var(--color-primary);
+}
+
+.socials > a {
+    transition: color 300ms ease-in-out;
+}
+
+.socials > a:hover {
+    color: var(--color-white);
+}
+
+.socials::after {
+    content: '';
+    height: 2em;
+    width: 1px;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+}
+
+.imageContainer {
+    position: absolute;
+    height: 25em;
+    width: 22em;
+    margin: 0 auto;
+    /* left: calc(50% - 200px); */ /* Nifty trick to keep it centered */
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: linear-gradient(var(--color-primary), transparent);
+    border-radius: 12em 12em 0 0;
+    overflow: hidden;
+}
+
+.imageContainer > span {
+    height:500px !important;
+    width: auto !important;
+}
+
+.scrollDown {
+    position: absolute;
+    right: -2.3em;
+    bottom: 5em;
+    transform: rotate(90deg);
+    color: var(--color-primary);
+    transition: color 300ms ease-in-out;
+}
+
+.scrollDown:hover {
+    color: var(--color-white);
+}
